@@ -1,0 +1,107 @@
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(76, 76, 212);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#card {
+    margin-top: 40px;
+    width: 50%;
+    height: 55%;
+    left: 25%;
+    background-color: whitesmoke;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+p#question {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.option {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(201, 201, 203);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    color: black;
+}
+
+.option:hover {
+    background-color: rgb(76, 76, 212);
+    color: white;
+}
+
+.option.selected {
+    background-color: rgb(76, 76, 212);
+    color: white;
+}
+
+#btnsubmit {
+    border-radius: 30px;
+    padding: 15px 50px 15px 50px;
+    background-color: rgb(76, 76, 212);
+    margin: 35px 0px 35px 40%;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+
+#btnsubmit:hover {
+    background-color: white;
+    color: black;
+}
+
+#timer {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+@media  (max-width: 500px) {
+    #card {
+        margin-top: 20px;
+        width: 80%;
+        height: 70%;
+        left: 10%;
+    }
+
+    #btnsubmit {
+        margin: 20px 0px 35px 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #card {
+        margin-top: 20px;
+        width: 90%;
+        height: 55%;
+        left: 5%;
+    }
+
+    #btnsubmit {
+        margin: 40px 0px 35px 35%;
+    }
+}
+
+@media (min-width: 800px) {
+    #card {
+        margin-top: 40px;
+        width: 50%;
+        height: 55%;
+        left: 25%;
+    }
+
+    #btnsubmit {
+        margin: 35px 0px 35px 40%;
+    }
+}

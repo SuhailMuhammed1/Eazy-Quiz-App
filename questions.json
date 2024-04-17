@@ -1,0 +1,30 @@
+{
+    "questions": [
+      {
+        "text": "1. What is the capital of France?",
+        "options": ["Berlin", "London","Paris", "Rome"],
+        "answer": "Paris"
+      },
+      {
+        "text": "2. What is the largest planet in the solar system?",
+        "options": ["Jupiter", "Earth", "Saturn", "Mars"],
+        "answer": "Jupiter"
+      },
+      {
+        "text": "3. Who won the FIFA World Cup in 2018?",
+        "options": ["Brazil", "France", "Germany", "Argentina"],
+        "answer": "France"
+      },
+      {
+        "text": "4. What is the chemical symbol for water?",
+        "options": ["CH4", "CO2", "O2", "H2O"],
+        "answer": "H2O"
+      },
+      {
+        "text": "5. Which country is known for originating the sport of cricket?",
+        "options": ["Australia", "India", "England", "South Africa"],
+        "answer": "England"
+      }
+    ]
+  }
+  
