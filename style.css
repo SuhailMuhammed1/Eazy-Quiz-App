@@ -12,13 +12,16 @@ h1 {
 #card {
     margin-top: 40px;
     width: 50%;
-    height: 55%;
+    min-height: 60%;
+    max-height: 80%;
     left: 25%;
     background-color: whitesmoke;
     position: absolute;
     border: 2px solid black;
     border-radius: 30px;
+    overflow-y: auto; 
 }
+
 
 p#question {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,6 +37,14 @@ p#question {
     cursor: pointer;
     display: block;
     color: black;
+    position: relative;
+}
+
+.option i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .option:hover {
@@ -50,7 +61,7 @@ p#question {
     border-radius: 30px;
     padding: 15px 50px 15px 50px;
     background-color: rgb(76, 76, 212);
-    margin: 35px 0px 35px 40%;
+    margin: 35px 40% 35px 40%;
     cursor: pointer;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -62,21 +73,79 @@ p#question {
     color: black;
 }
 
-#timer {
-    margin-top: 30px;
-    margin-left: 20px;
+
+#timer-container{
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
 }
 
-@media  (max-width: 500px) {
+h3#title {
+    color: rgb(76, 76, 212);
+    font-size: 25px;
+}
+
+#timer-container #timer {
+    margin-top: 20px;
+    margin-left: 50%; 
+    margin-bottom: 20px;
+}
+
+#timer-container #line {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: 3px;
+    background-color: rgb(76, 76, 212);
+    width: 0%;
+    transition: width linear; 
+}
+
+@media (max-width: 400px) {
     #card {
         margin-top: 20px;
-        width: 80%;
-        height: 70%;
+        width: 100%;
+        min-height: 40%;
+        max-height: 60%;
         left: 10%;
+        padding: 20px 0px 80px 0px;
     }
 
     #btnsubmit {
-        margin: 20px 0px 35px 25%;
+        margin: 30px 30% 20px 30%;
+    }
+
+    #timer-container{
+        position: relative;
+        z-index: 2;
+        height: 50px;
+        padding: 0px 10px;
+        margin-top: -20px;
+        border-radius: 30px 30px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    h3#title {
+        color: rgb(76, 76, 212);
+        font-size: 15px;
+    }
+}
+
+@media  (min-width: 500px) {
+    #card {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        left: 10%;
     }
 }
 
@@ -86,10 +155,6 @@ p#question {
         width: 90%;
         height: 55%;
         left: 5%;
-    }
-
-    #btnsubmit {
-        margin: 40px 0px 35px 35%;
     }
 }
 
@@ -101,7 +166,4 @@ p#question {
         left: 25%;
     }
 
-    #btnsubmit {
-        margin: 35px 0px 35px 40%;
-    }
 }
